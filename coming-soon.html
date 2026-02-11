@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon — OldResorts.com</title>
+  <meta name="description" content="This page is still stuck in the past. Check back soon — we're cataloging America's unrenovated resorts, vintage hotels, and time-capsule stays.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://oldresorts.com/coming-soon.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OldResorts.com">
+  <meta property="og:title" content="Coming Soon — OldResorts.com">
+  <meta property="og:description" content="This page is still stuck in the past. Check back soon.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Film Grain -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo" aria-label="OldResorts.com home">
+        <span class="nav__logo-icon" aria-hidden="true">OR</span>
+        OldResorts.com
+      </a>
+
+      <div class="nav__links" role="menubar">
+        <a href="/" class="nav__link" role="menuitem">Home</a>
+        <a href="coming-soon.html?page=resorts" class="nav__link" role="menuitem">Resorts</a>
+        <a href="coming-soon.html?page=categories" class="nav__link" role="menuitem">Categories</a>
+        <a href="coming-soon.html?page=index" class="nav__link" role="menuitem">The Index</a>
+        <a href="coming-soon.html?page=manifesto" class="nav__link" role="menuitem">Manifesto</a>
+        <a href="coming-soon.html?page=stories" class="nav__link" role="menuitem">Stories</a>
+      </div>
+
+      <a href="coming-soon.html?page=submit" class="nav__cta">Submit a Resort</a>
+
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="/" class="mobile-menu__link">Home</a>
+    <a href="coming-soon.html?page=resorts" class="mobile-menu__link">Resorts</a>
+    <a href="coming-soon.html?page=categories" class="mobile-menu__link">Categories</a>
+    <a href="coming-soon.html?page=index" class="mobile-menu__link">The Index</a>
+    <a href="coming-soon.html?page=manifesto" class="mobile-menu__link">Manifesto</a>
+    <a href="coming-soon.html?page=stories" class="mobile-menu__link">Stories</a>
+    <a href="coming-soon.html?page=submit" class="mobile-menu__link" style="color: var(--color-amber);">Submit a Resort</a>
+  </div>
+
+  <!-- Coming Soon Content -->
+  <main class="coming-soon" role="main">
+    <div class="coming-soon__content">
+      <div class="coming-soon__icon" aria-hidden="true">&#127976;</div>
+
+      <div class="coming-soon__page-name" id="page-label">Loading...</div>
+
+      <h1 class="coming-soon__title">Still Stuck in <em style="color: var(--color-amber); font-style: italic;">the Past</em></h1>
+
+      <p class="coming-soon__desc">
+        This page hasn't been built yet — much like the resorts we celebrate, some things take their time. We're currently cataloging America's most gloriously unrenovated hotels, and this section is on its way.
+      </p>
+
+      <p class="coming-soon__desc" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--color-text-muted);">
+        No rush. No renovation timeline. No project manager. Just patience.
+      </p>
+
+      <div style="margin-top: var(--space-2xl); display: flex; flex-direction: column; align-items: center; gap: var(--space-md);">
+        <a href="/" class="btn btn--primary">Back to the Lobby</a>
+        <a href="/#newsletter" class="btn btn--outline">Get Notified When We Launch</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Display the page name from query parameter
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var page = params.get('page');
+      var label = document.getElementById('page-label');
+
+      var pageNames = {
+        'resorts': 'All Resorts',
+        'categories': 'Categories',
+        'index': 'The Old Resort Index',
+        'manifesto': 'The Manifesto',
+        'stories': 'Stories & Dispatches',
+        'submit': 'Submit a Resort',
+        'about': 'About Us',
+        'contact': 'Contact',
+        'privacy': 'Privacy Policy',
+        'terms': 'Terms of Use',
+        'sitemap': 'Sitemap',
+        'subscribe': 'Newsletter',
+        'map': 'Resort Map',
+        'all-resorts': 'All Resorts',
+        'do-not-renovate': 'Do Not Renovate List',
+        'category-frozen-in-time': 'Frozen in Time',
+        'category-former-luxury': 'Former Luxury, Current Chaos',
+        'category-empty-pools': 'Empty Pool Culture',
+        'category-piano-bars': 'Piano Bars & Wood Paneling',
+        'category-divorce-dad': 'Divorce Dad Resorts',
+        'category-suspiciously-empty': 'Suspiciously Empty',
+        'category-retiree-strongholds': 'Retiree Strongholds',
+        'category-motel-resorts': 'Motels Disguised as Resorts',
+        'resort-the-sands': 'The Sands Motor Lodge',
+        'resort-pines': 'The Grand Pines Lodge',
+        'resort-desert-winds': 'Desert Winds Motor Inn'
+      };
+
+      if (page && pageNames[page]) {
+        label.textContent = pageNames[page];
+        document.title = pageNames[page] + ' — Coming Soon | OldResorts.com';
+      } else if (page) {
+        label.textContent = page.replace(/-/g, ' ').replace(/\b\w/g, function(l) { return l.toUpperCase(); });
+        document.title = label.textContent + ' — Coming Soon | OldResorts.com';
+      } else {
+        label.textContent = 'Coming Soon';
+      }
+    })();
+  </script>
+</body>
+</html>
